@@ -1,19 +1,7 @@
-
-<html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simora</title>
-</head>
-
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap" rel="stylesheet">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-
 <meta name="google-signin-client_id" content="<!--your OAuth client here-->">
 <body>
-   
-
 <div class="main">
 <div class="fake"></div>
 <div class="head">SIMORA</div>
@@ -31,9 +19,7 @@ function onSignIn(googleUser) {
   document.querySelector(".g-signin2").style.cssText = "display:none;";
   document.querySelector(".log-out").style.cssText = "display:flex;";
   document.querySelector(".fake").style.cssText =   `background:url(${profile.getImageUrl()}) 100% 100% / cover;height: 10vw;width: 10vw;`;
-  
 }
-
 </script>
 
 
@@ -49,9 +35,7 @@ function onSignIn(googleUser) {
   document.querySelector(".det").innerHTML = `logged out successfully !`;
   document.querySelector(".g-signin2").style.cssText = "display:flex;";
   document.querySelector(".log-out").style.cssText = "display:none;";
-  
-  document.querySelector(".fake").style.cssText =   `background:transparent; background-size:cover;`;
-
+  document.querySelector(".fake").style.cssText =   `background:transparent; background-size:cover;`
   }
 </script>
 </div>
